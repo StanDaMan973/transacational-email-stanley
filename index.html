@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transactional Email</title>
+
+
+
+  <style>
+    @media only screen and (max-width:600px) {
+
+      .container {
+        width: 100% !important;
+      }
+
+      .header {
+        width: 70%;
+        padding: 10px 0px;
+      }
+
+      .number {
+        margin-right: 20px;
+        font-size: 20px !important;
+      }
+
+      .thanks h1 {
+        width: 70%;
+        text-align: center;
+        line-height: 50px !important;
+        font-size: 40px !important;
+        margin: 10px auto !important;
+      }
+
+      .thanks img {
+        margin-bottom: 10px;
+      }
+
+      .thanks p {
+        font-size: 22px !important;
+        margin-bottom: 0px !important;
+      }
+
+
+
+      .thanks .pickup-details {
+        width: 400px !important;
+        margin: 10px auto !important;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        line-height: 30px !important;
+        font-size: 20px !important;
+
+      }
+
+      .border-line {
+        width: 50% !important;
+      }
+
+      .border-1-td {
+        display: none !important;
+      }
+
+
+      .total span {
+        font-size: 23px !important;
+      }
+
+      .total p {
+        font-size: 45px !important;
+      }
+
+
+
+      .pickup h2 {
+        width: 85% !important;
+        margin: 0 auto !important;
+        font-size: 22px !important;
+      }
+
+      .pickup .left {
+        width: 100% !important;
+      }
+
+      .pickup .left img {
+        width: 300px !important;
+        margin: 0 100px !important;
+      }
+
+
+      .pickup .right {
+        max-width: 100% !important;
+        width: 70% !important;
+        text-align: left;
+        margin: 0 55px 30px 0px !important;
+
+      }
+
+
+
+      .changes .details img {
+        margin: 20px auto 10px auto !important;
+      }
+
+      .address span {
+        font-size: 18px !important;
+      }
+
+
+      .address p {
+        width: 262px;
+        margin: 10px auto !important;
+        font-size: 20px !important;
+        line-height: 30px !important;
+      }
+
+      .summary {
+        padding: 0 85px !important;
+      }
+
+      .changes .details {
+        width: 500px;
+      }
+
+      .changes td {
+        padding-bottom: 30px !important;
+      }
+
+      .changes .details p {
+        line-height: 23px !important;
+      }
+
+      .box-columns td {
+        display: block !important;
+      }
+
+      .target-box {
+        width: 430px !important;
+        margin: 0 auto !important;
+      }
+
+
+      .footer-links ul {
+        display: block !important;
+        padding: 0 !important;
+      }
+
+
+      .footer-links li {
+        font-size: 20px !important;
+        margin: 0px 0px !important;
+        display: block !important;
+        border-bottom: 1px solid #e3e9ed;
+        padding: 15px 0px;
+        vertical-align: middle;
+      }
+
+
+      .footer-links #first-li {
+        border-top: 1px solid #e3e9ed !important;
+      }
+
+    }
+  </style>
+</head>
+
+
+
+<body style="margin: 0;">
+
+  <!-- start of email -->
+  <table class="email" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0"
+    style="background: #ffffff;">
+
+    <tr>
+      <td>
+        <!-- start of container section -->
+        <table class="container" width="600px" align="center" borders="0" cellspacing="0" cellpadding="0"
+          style="background: white; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;">
+
+          <!-- start of header section -->
+          <tr>
+            <td>
+              <table class="header" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                <tr>
+
+                  <td>
+                    <!-- start of logo section -->
+                    <table class="logo" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                      <a href="https://www.target.com/" class="target-logo"
+                        style="text-decoration: none; outline: none;">
+                        <img src="/img/logo.png" alt="target logo" width="50px"
+                          style="max-width:100% !important; height:auto;">
+                      </a>
+                    </table>
+                    <!-- end of logo section -->
+                  </td>
+
+                  <td>
+                    <!-- start of order-number section -->
+                    <table class="order-number" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                      <a href="#" class="number"
+                        style="text-decoration: none; outline: none; float: right; color: #333333; padding-right: 5px;">
+                        Order # 9081444563609
+                      </a>
+                    </table>
+                    <!-- end of order-number section -->
+                  </td>
+
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of header section -->
+
+          <!-- start of order section -->
+          <tr>
+            <td>
+              <table class="order" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+
+                <tr>
+                  <!-- start of thanks section -->
+                  <td>
+                    <table class="thanks" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td style="text-align: center;">
+                          <h1 style="color:#cc0000; font-weight: bold; font-size: 38px; line-height: 45px; padding: 0;">
+                            Thanks for your order, Stanley!
+                          </h1>
+                          <p
+                            style="font-weight: normal; font-size: 21px;line-height: 23px;text-align: center; margin-bottom: 15px;">
+                            Placed
+                            March 16, 2023</p>
+                          <img src="/img/order-dog.png" alt="target-dog" width="90%"
+                            style="max-width:100% !important; height:auto;">
+                          <p class="pickup-details"
+                            style="font-size: 16px; line-height: 23px; font-weight: normal; color:#333333; margin:20px 0px">
+                            Now just sit back while we get to work. We’ll reach out soon to let you know your order is
+                            ready for pickup.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <!-- end of thanks section -->
+                </tr>
+
+                <!-- start of border-line section -->
+                <tr>
+                  <td class="border" align="center"
+                    style="font-size:0px;padding:0px 10px 30px 10px; word-break:break-word;">
+                    <p class="border-line"
+                      style="border-top:solid 1px #e3e9ed;font-size:1px;margin:0px auto;width:100%"></p>
+                  </td>
+                </tr>
+                <!-- end of border-line section -->
+
+                <!-- start of total section -->
+                <tr>
+                  <td>
+                    <table class="total" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                      <tr>
+
+                        <td style="text-align: center; padding-bottom: 40px;">
+                          <span style="font-size: 20px; color: #333333; text-transform: capitalize;">order
+                            total</span>
+                          <p
+                            style="font-size: 40px; color: #333333; font-weight: bold; padding-bottom: 20px; margin: 0;">
+                            $33.58
+                          </p>
+                          <a href="https://www.target.com/orders/9081444563609?&ref=OpsEmail_Order_80690&j=799015&sfmc_sub=240775654&l=652_HTML&u=37084752&mid=100019899&jb=169004"
+                            style="background: #cc0000;color: #ffffff; font-size: 16px; font-weight: normal; text-decoration: none; display: inline-block; border: 1px solid #cc0000; padding: 15px 50px 15px 50px; border-radius: 3px;"
+                            target="_blank">
+                            Visit
+                            order
+                            details
+                          </a>
+                        </td>
+
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+                <!-- end of total section -->
+              </table>
+            </td>
+          </tr>
+          <!-- end of order section -->
+
+          <!-- start of pickup section -->
+          <tr>
+            <td>
+              <table class="pickup" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+
+
+                <!-- start of title section -->
+                <tr>
+                  <td style="text-align: center;padding-bottom:20px" align="center">
+                    <h2
+                      style="font-size: 20px; color: #222222; background: #eff0f1; margin: 0; padding: 10px 10px; text-transform: capitalize;">
+                      processing for in-store
+                      pickup
+                    </h2>
+                    <img src="/img/small-triangle.png" alt="small-triangle" width="27" height="11"
+                      style="display: block; margin: 0 auto; max-width:100% !important ;height:auto;">
+                  </td>
+                </tr>
+                <!-- end of title section -->
+
+                <!-- start of address section -->
+                <tr>
+                  <td class="address" style="text-align: center;">
+                    <span style="color: #222222; text-transform: capitalize; font-weight: bold;">your pickup
+                      store:</span>
+                    <p style="margin: 10px;">Linden Target store - <a target="_blank"
+                        href="https://www.google.com/maps/place/621+W+Edgar+Rd,+Linden,+NJ+07036/@40.6190297,-74.2456153,17z/data=!3m1!4b1!4m6!3m5!1s0x89c3b314214af5a5:0x48a90111e45822ca!8m2!3d40.6190297!4d-74.2434266!16s%2Fg%2F11bw3yz2l_">621
+                        W Edgar Rd,
+                        Linden, NJ 07036-3203</a>
+                    </p>
+                  </td>
+                </tr>
+                <!-- end of address section -->
+
+
+
+                <!-- start of pad section -->
+                <tr>
+                  <td class="pad-td">
+
+                    <table class="left" width="50%" align="left" borders="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <a href="https://click.oe1.target.com/?qs=e304e3c562584a2bfc1a1211b484d350da6d90d3f01d8fabbe7d0da524afce4cc4ee84e78c52d19be2f64900c9f7d421b12fc207773edf623cdad3247bb35868"
+                            style="text-align: center;">
+                            <img style="width: 185px; margin: 0 50px; max-width:100% !important; height:auto;"
+                              src="/img/changing-pad.jpeg" alt="changing-pad">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table class="right" width="50%" align="right" borders="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td>
+                          <p style="line-height: 25px; color: #222222; font-weight: bold;">Munchkin Secure
+                            Grip Waterproof
+                            Diaper Changing Pad 16X31"
+                          </p>
+                          <p>Qty: 1</p>
+                          <p>$31.49 / ea</p>
+                          <p style="color:#008300; font-weight: bold;">Processing</p>
+                        </td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+                <!-- end of pad section -->
+
+
+                <!-- start of border-line section -->
+                <tr>
+                  <td align="center" style="font-size:0px;padding:0px 10px 30px 10px; word-break:break-word;">
+                    <p class="border-line"
+                      style="border-top:solid 1px #e3e9ed ;font-size:1px;margin:0px auto;width:100%"></p>
+                  </td>
+                </tr>
+                <!-- end of border-line section -->
+
+
+              </table>
+            </td>
+          </tr>
+          <!-- end of pickup section -->
+
+          <!-- start of summary section -->
+          <tr>
+            <td>
+              <table class="summary" width="100%" align="center" style="padding: 0 100px;" borders="0" cellspacing="0"
+                cellpadding="0">
+
+                <tr>
+                  <td>
+                    <table class="details" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+
+                      <tr>
+                        <td style="text-align: center; padding-bottom: 20px;">
+                          <span style="text-transform: capitalize; font-weight: bold; font-size: 25px;">
+                            order summary
+                          </span>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style="padding-bottom:10px;">
+                          <p
+                            style=" display: inline-block; float:left; text-transform: capitalize; font-weight: bold; font-size: 20px; vertical-align: middle; padding:0; margin: 0;">
+                            Subtotal (1 item)
+                          </p>
+                          <p
+                            style="display: inline-block; float:right; text-transform: capitalize; font-weight: bold; font-size: 20px; vertical-align: middle; padding:0; margin: 0;">
+                            $31.49</p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style="padding-bottom:10px">
+                          <p
+                            style="display: inline-block; float:left; text-transform: capitalize; font-weight: bold; font-size: 20px; vertical-align: middle; padding:0; margin: 0;">
+                            Delivery
+                          </p>
+                          <p
+                            style="display: inline-block; float:right; color:#cc0000; text-align: end; text-transform: capitalize; font-weight: bold; font-size: 20px; vertical-align: middle; padding:0; margin: 0;">
+                            Free</p>
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td style="padding-bottom:10px; border-bottom: 1px solid #e3e9ed;" width="100%">
+                          <p
+                            style="display: inline-block; float:left;  text-transform: capitalize; font-weight: bold; font-size: 20px; vertical-align: middle; padding:0; margin: 0;">
+                            Estimated Taxes
+                          </p>
+                          <p
+                            style="display: inline-block; float:right;  color:#222222; text-align: end; text-transform: capitalize; font-weight: bold; font-size: 20px; vertical-align: middle; padding:0; margin: 0;">
+                            $2.09</p>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style="border-bottom: 1px solid #e3e9ed; padding-bottom: 10px;" width="100%">
+                          <p
+                            style="display: inline-block; float:left; text-transform: capitalize; font-weight: bold; font-size: 20px; vertical-align: middle; padding-top:10px; margin: 0;">
+                            Total
+                          </p>
+                          <p
+                            style="display: inline-block; float:right;  color:#222222; text-align: end; text-transform: capitalize; font-weight: bold; font-size: 20px; vertical-align: middle; padding-top:10px; margin: 0;">
+                            $33.58
+                          </p>
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td style="padding: 10px 0px;" width="100%">
+
+                          <div style="display: inline-block; float:left;">
+                            <img src="/img/visa.png" alt="visa-logo"
+                              style="width: 45px; height: 30px; vertical-align: bottom; max-width:100% !important; height:auto;">
+                            <span
+                              style="text-transform: capitalize; font-weight: normal; font-size: 14px; vertical-align: text-top; padding:0px 10px; margin: 0;">
+                              Visa *1555
+                            </span>
+                          </div>
+
+                          <p
+                            style="display: inline-block; float:right; color:#222222; text-transform: capitalize; font-weight: bold; font-size: 14px; vertical-align: middle; padding-top:10px; margin: 0;">
+                            $33.58
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of summary  section -->
+
+          <!-- start of changes section -->
+          <tr>
+            <td>
+              <table class="changes" width="100%" align="center" style="padding: 0px" borders="0" cellspacing="0"
+                cellpadding="0">
+                <tr>
+                  <td>
+                    <table class="details" width="100%" align="center" style="padding: 0 100px;" borders="0"
+                      cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td style="text-align: center; padding-bottom: 45px;">
+                          <img src="/img/box-target.png" alt="target-box"
+                            style="width: 82px; display: block; margin: 0px auto 10px auto; max-width:100% !important; height:auto;">
+                          <span
+                            style="display:block; text-transform: capitalize; color: #222222; font-weight: bold; font-size:18px;">need
+                            to make changes? act fast</span>
+                          <p style="display:block; text-align: center; color:
+                            #222222; font-weight: normal; font-size:16px;; padding:0; margin:10px 0px 40px 0px;">We
+                            process orders
+                            quickly, so you'll want to
+                            visit your order details page as soon
+                            possible.</p>
+                          <a href="https://www.target.com/orders/9081444563609?&ref=OpsEmail_Order_80690&j=799015&sfmc_sub=240775654&l=652_HTML&u=37084752&mid=100019899&jb=169004"
+                            style="background:#ffffff;color: #222222; font-size: 16px; border: 1px solid #222222; font-weight: normal; text-decoration: none; padding: 15px 50px 15px 50px;">
+                            Visit
+                            order
+                            details
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of changes section -->
+
+          <!-- start of footer section -->
+          <tr>
+            <td>
+              <table class="footer" width="100%" align="center" style="padding: 0px" borders="0" cellspacing="0"
+                cellpadding="0">
+                <tr>
+                  <td>
+                    <table class="target-box" width="100%" align="center"
+                      style="padding: 20px 0px 0px 0px; margin:0px 0px;" borders="0" cellspacing="0" cellpadding="0">
+
+                      <!-- start of title section -->
+                      <tr>
+                        <td style="background: #333333; padding: 0px; text-align: center;">
+                          <h2 style="margin: 15px 0;">
+                            <a href="https://www.target.com/c/weekly-deals/-/N-4xw74?ref=OpsEmail_Order_80690&j=799015&sfmc_sub=240775654&l=652_HTML&u=37084765&mid=100019899&jb=169004"
+                              style="color: #ffffff; font-size:16px; text-decoration: none; cursor: pointer;"
+                              target="_blank">Even more
+                              ways to
+                              <strong>save.</strong>
+                            </a>
+                          </h2>
+                        </td>
+                      </tr>
+                      <!-- end of title section -->
+
+                      <!-- start of box-columns section -->
+                      <tr>
+                        <td style="padding-bottom: 30px;">
+                          <table class="box-columns" width="100%" align="center"
+                            style="padding: 0px 0px 0px 0xp; margin: 0 auto;" borders="0" cellspacing="0"
+                            cellpadding="0">
+                            <tr>
+                              <td style="background-color: #ffffff; padding: 5px 0px 10px 0px;">
+                                <img src="/img/shipping.png" alt="shipping"
+                                  style="width: 120px; text-align: center; display: block; margin: 0 auto; max-width:100%;height:auto;">
+                                <p
+                                  style="font-size: 13px; color: #333333; text-align: center; font-weight: bold; margin: 0;">
+                                  Free
+                                  2-day ship </p>
+                              </td>
+                              <td style="background-color: #fafafa;; padding: 5px 0px 10px 0px;">
+                                <img src="img/celerance.png" alt="clearance-img"
+                                  style="width: 120px; text-align: center; display: block; margin: 0 auto; max-width:100%;height:auto;">
+                                <p
+                                  style="font-size: 13px; color: #333333; text-align: center; font-weight: bold; margin: 0;">
+                                  Clearance
+                                </p>
+                              </td>
+                              <td style="background-color: #f5f5f5; padding: 5px 0px 10px 0px;">
+                                <img src="/img/target-app.png" alt="target-app"
+                                  style="width: 120px; text-align: center; display: block; margin: 0 auto; max-width:100%;height:auto;">
+                                <p
+                                  style="font-size: 13px; color: #333333; text-align: center; font-weight: bold; margin: 0;">
+                                  Target App
+                                </p>
+                              </td>
+                              <td style="background-color: #f0f0f0; padding: 5px 0px 10px 0px;">
+                                <img src="/img/delivery.png" alt="delivery"
+                                  style="width: 120px; text-align: center; display: block; margin: 0 auto; max-width:100%;height:auto;">
+                                <p
+                                  style="font-size: 13px; color: #333333; text-align: center; font-weight: bold; margin: 0;">
+                                  Same Day Delivery
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- start of box-columns section -->
+
+                      <!-- start of border-line section -->
+                      <tr>
+                        <td class="border-1-td" align="center"
+                          style="font-size:0px;padding:0px 10px 20px 10px; word-break:break-word;">
+                          <p class="border-1"
+                            style="border-top:solid 1px #e3e9ed ;font-size:1px;margin:0px auto; width:100%;">
+                          </p>
+                        </td>
+                      </tr>
+                      <!-- end of border-line section -->
+
+                      <!-- start of footer-links section -->
+                      <tr>
+                        <td>
+                          <table class="footer-links" width="100%" align="center"
+                            style="padding: 0px 0px 20px 0px; margin: 0 auto;" borders="0" cellspacing="0"
+                            cellpadding="0">
+                            <tr>
+                              <td style="width: 100%;">
+                                <ul
+                                  style="display: inline-block; list-style: none; text-align:center; color: #333333; text-transform: capitalize; font-size: 14px;">
+                                  <li id="first-li" style="margin: 0 15px; display: inline-block;">help</li>
+                                  <li style="margin: 0 15px; display: inline-block;">returns</li>
+                                  <li style="margin: 0 15px; display: inline-block;">contact</li>
+                                  <li style="margin: 0 15px; display: inline-block;">find a store</li>
+                                  <li style="margin: 0 15px; display: inline-block;">terms of use</li>
+                                  <li style="margin: 0 15px; display: inline-block;">privacy</li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- end of footer-links section -->
+
+                      <!-- start of target section -->
+                      <tr>
+                        <td>
+                          <table class="brands" width="100%" align="center"
+                            style="padding: 0px 0px 0px 0px; margin: 0 auto;" borders="0" cellspacing="0"
+                            cellpadding="0">
+                            <tr>
+                              <td style="text-align: center;">
+                                <a href="https://www.target.com/?ref=OpsEmail_Order_80690&j=799015&sfmc_sub=240775654&l=652_HTML&u=37084782&mid=100019899&jb=169004"
+                                  style="color: #cc0000; font-weight:500; font-size:17px; padding-bottom: 10px; text-decoration: none;"
+                                  target="_blank">Target.com</a>
+                                <p style="padding-bottom: 20px; font-size: 13px;">© 2023 Target Brands, Inc.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- end of target section -->
+
+
+                      <!-- start of information section -->
+                      <tr>
+                        <td>
+                          <table class="latest" width="100%" align="center"
+                            style="padding: 0px 0px 30px 0px; margin: 0 auto;" borders="0" cellspacing="0"
+                            cellpadding="0">
+                            <tr>
+
+                              <td style="text-align: center; padding: 10px 0px 20px 0px;">
+                                <a href="#"
+                                  style="font-size: 16px; color: #333333;  text-decoration: none; display: inline-block; line-height: 23px; border: 1px solid #888888; padding: 12px 16px 12px 16px; border-radius: 8px; border-spacing: 2px; text-align: left; width: 280px;">
+                                  <table class="latest" width="100%" align="center"
+                                    style="padding: 0px 0px 0px 0px; margin: 0 auto;" borders="0" cellspacing="0"
+                                    cellpadding="0">
+                                    <tr>
+                                      <td>Get the latest on our store <u>health
+                                          &amp; safety&nbsp;plans</u> </td>
+                                      <td>
+                                        <img src="/img/information.jpg" alt="information-icon" width="30px"
+                                          style="vertical-align: middle; margin-left: 10px; max-width:100%;height:auto;">
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </a>
+                              </td>
+                              <td>
+
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- start of information section -->
+
+
+
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- end of footer section -->
+
+        </table>
+        <!-- end of container section -->
+
+      </td>
+    </tr>
+
+  </table>
+  <!-- end of email -->
+
+
+
+
+
+
+
+
+</body>
+
+</html>
